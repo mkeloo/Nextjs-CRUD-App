@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="py-5">
+      <main className="py-5 mx-auto overflow-x-hidden">
         <h1 className="text-xl md:text-5xl text-center font-bold py-10">
           Employee Management
         </h1>
@@ -27,7 +27,7 @@ export default function Home() {
           <div className="left flex gap-3">
             <button
               onClick={handleAddEmployee}
-              className="flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-gray-0 hover:border-indigo-500 hover:text-indigo-800 duration-300"
+              className="flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-gray-0 hover:border-indigo-500 hover:bg-white hover:text-indigo-800 duration-300"
             >
               Add Employee{' '}
               <span className="px-1">
@@ -41,7 +41,7 @@ export default function Home() {
         {visible && <Form />}
 
         {/* Table */}
-        <div className="container mx-auto ">
+        <div className="mx-auto w-full m-5">
           <Table />
         </div>
       </main>
